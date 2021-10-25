@@ -26,32 +26,32 @@ namespace Trabalho_Caixa_Eletronico_IFSP
                 Cont++;
                 Saque = Saque - 5;
             }
-            if (Saque >= 100)
+            else if (Saque >= 100)
             {
                 Cont100 = Saque / 100;
                 Saque = Saque - (Cont100 * 100);
             }
-            if (Saque >= 50)
+            else if (Saque >= 50)
             {
                 Cont50 = Saque / 50;
                 Saque = Saque - (Cont50 * 50);
             }
-            if (Saque >= 20)
+            else if (Saque >= 20)
             {
                 Cont20 = Saque / 20;
                 Saque = Saque - (Cont20 * 20);
             }
-            if (Saque >= 10)
+            else if (Saque >= 10)
             {
                 Cont10 = Saque / 10;
                 Saque = Saque - (Cont10 * 10);
             }
-            if (Saque <= 5 && Saque != 6)
+            else if (Saque <= 5 && Saque != 6)
             {
                 Cont5 = Saque / 5;
                 Saque = Saque - (Cont5 * 5);
             }
-            if (Saque >= 2)
+            else if (Saque >= 2)
             {
                 Cont2 = Saque / 2;
                 Saque = Saque - (Cont2 * 2);
@@ -81,7 +81,7 @@ namespace Trabalho_Caixa_Eletronico_IFSP
                         }
                     }
                 }
-                if (Saque >= 5)
+                else if (Saque >= 5)
                 {
                     int vlSaque = int.Parse(Saque.ToString().Substring(Saque.ToString().Length - 1, 1));
                     if (Saque == 6 || vlSaque == 6)
@@ -95,24 +95,24 @@ namespace Trabalho_Caixa_Eletronico_IFSP
                         Saque = Saque - 5;
                     }
                 }
-                if (Saque >= 10)
+                else if (Saque >= 10)
                 {
                     Cont10++;
                     Saque = Saque - 10;
                 }
-                if (Saque >= 20)
+                else if (Saque >= 20)
                 {
                     Cont20++;
                     Saque = Saque - 20;
                 }
 
-                if (Saque >= 50)
+                else if (Saque >= 50)
                 {
                     Cont50++;
                     Saque = Saque - 50;
 
                 }
-                if (Saque >= 100)
+                else if (Saque >= 100)
                 {
                     Cont100++;
                     Saque = Saque - 100;
